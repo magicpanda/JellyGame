@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
+		http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-4.0.xsd"
+       default-lazy-init="true">
+
+    <description>Jelly Spring Game Configuration</description>
+    <context:property-placeholder ignore-unresolvable="true"
+                                  location="classpath*:/application.properties"/>
+
+    <!-- 数据源配置, 使用Tomcat JDBC连接池 -->
+    <bean id="dataSource" class="org.apache.tomcat.jdbc.pool.DataSource" destroy-method="close">
+        <!-- Connection Info -->
+        <property name="driverClassName" value="${jdbc.driver}"/>
+        <property name="url" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+
+        <!-- Connection Pooling Info -->
+        <property name="maxActive" value="${jdbc.pool.maxActive}"/>
+        <property name="maxIdle" value="${jdbc.pool.maxIdle}"/>
+        <property name="minIdle" value="0"/>
+        <property name="defaultAutoCommit" value="true"/>
+    </bean>
+    <context:component-scan base-package="com.magicpanda.core"/>
+    <context:component-scan base-package="com.magicpanda.game"/>
+    <!-- 初始化数据表结构 -->
+    <!--<jdbc:initialize-database data-source="dataSource" ignore-failures="ALL">-->
+        <!--<jdbc:script location="classpath:${db.type}/game_shard.sql"/>-->
+    <!--</jdbc:initialize-database>-->
+    <bean id="userDao" class="com.magicpanda.core.jdbc.dao.UserDao">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+
+    <bean id="levelDao" class="com.magicpanda.core.jdbc.dao.LevelDao">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+</beans>
