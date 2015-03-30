@@ -34,7 +34,7 @@ sessionId：第2个接⼝返回的sessionId
 row0, col0, row1, col1表⽰⼀次操作的左上⾓和右下⾓的果冻坐标，⽐如：
 row0=0&col1=1&row1=2&row2=2
 返回：
-8⾏⽂本，表⽰消除结束且完成下落后的局⾯，格式与接⼝1的返回中后8⾏相同。
+8行文本，表示消除结束且完成下落后的局⾯，格式与接⼝1的返回中后8⾏相同。
 
 ##Example
 举例：
@@ -83,7 +83,7 @@ BBBBBBBB
 6. 最后提交的项⺫需要包含完整的项目⽂件和源代码，以及创建数据库的相关脚本
 
 ### Performance
-In the following three experiments, the spec of the computer used can be found in the following table
+In the following experiments, the spec of the computer used can be found in the following table
 
 | Component      | Spec                                    |
 |----------------|-----------------------------------------|
@@ -93,5 +93,12 @@ In the following three experiments, the spec of the computer used can be found i
 | Software       | Windows 8.1 64位                        |
 | Jvm            | Oracle JDK 1.7.0_25                     |
 
+#### Load testing with Jmeter
+We use [Apache Jmeter](http://jmeter.apache.org) for load testing, and the load testing script can be found in `${JellyGame}/jmeter.jmx`.
+
+
+| label	| samples	| average	| aggregate_report_error%	| aggregate_report_rate	| aggregate_report_bandwidth	| average_bytes |
+|-------|---------|---------|-------------------------|-----------------------|-----------------------------|---------------|
+| startLevel	| 50000	| 232	| 0	| 200.837089	| 46.57485054	| 237.46932|
 
 
