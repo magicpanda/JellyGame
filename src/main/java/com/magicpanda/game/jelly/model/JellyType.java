@@ -4,6 +4,7 @@ import com.magicpanda.game.jelly.util.Utilities;
 
 /**
  * Created by 利彬 on 2015/3/29.
+ * Different Jelly Type
  */
 public enum JellyType {
     NULL('N'),
@@ -13,9 +14,11 @@ public enum JellyType {
     SPLASH('S');
 
     private char symbol;
-    JellyType(char symbol){
+
+    JellyType(char symbol) {
         this.symbol = symbol;
     }
+
     public char getJellyType() {
         return this.symbol;
     }
@@ -32,9 +35,10 @@ public enum JellyType {
 
     @Override
     public String toString() {
-        return symbol+"";
+        return symbol + "";
     }
-    public static JellyType getRandomJellyType(){
+
+    public static JellyType getRandomJellyType() {
         int random = Utilities.getRandomNumberFrom(1, 4);
         return JellyType.values()[random];
     }

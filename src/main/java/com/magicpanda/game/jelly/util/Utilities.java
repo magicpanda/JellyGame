@@ -1,4 +1,3 @@
-
 package com.magicpanda.game.jelly.util;
 
 import com.google.common.base.Joiner;
@@ -6,7 +5,9 @@ import com.google.common.base.Splitter;
 import com.magicpanda.game.jelly.model.JellyType;
 import org.joda.time.DateTimeUtils;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 
 
 public class Utilities {
@@ -19,27 +20,17 @@ public class Utilities {
      * @return the random number
      */
     private static final Random random = new Random();
+    //ROW Size
     public static final int JELLY_ROW = 8;
+    //COLUMN Size
     public static final int JELLY_COLUMN = 8;
 
     public static int getRandomNumberFrom(int min, int max) {
         return random.nextInt((max + 1) - min) + min;
     }
 
-    /**
-     * Return a float number which is a random integer between min and max when divided by 100.
-     * E.g getRandomFactor(90,  110) may return any value betwen 0.9 and 1.1
-     *
-     * @param min
-     * @param max
-     * @return
-     */
-    public static float getRandomFactor(int min, int max) {
-        return (float) (random.nextInt((max + 1) - min) + min) / 100;
-    }
-
     public static final String generateKey() {
-        return Long.toString(DateTimeUtils.currentTimeMillis(), 36) + Integer.toString(random.nextInt(), 36);
+        return Long.toString(currentTime(), 36) + Integer.toString(random.nextInt(), 36);
     }
 
     public static final long currentTime() {
@@ -56,12 +47,12 @@ public class Utilities {
         return (random.nextInt(100) < possibility);
     }
 
-    public static JellyType[][] convertStringToLayout(String layout){
+    public static JellyType[][] convertStringToLayout(String layout) {
         JellyType[][] layoutType = new JellyType[JELLY_ROW][JELLY_COLUMN];
         int lineCount = 0;
-        for(String line : Splitter.on("-").split(layout)){
+        for (String line : Splitter.on("-").split(layout)) {
             int count = 0;
-            for(char jellyType: line.toCharArray()){
+            for (char jellyType : line.toCharArray()) {
                 layoutType[lineCount][count] = JellyType.getJelly(jellyType);
                 count++;
             }
@@ -71,22 +62,23 @@ public class Utilities {
     }
 
 
-    public static String convertLayoutToString(JellyType[][] layout){
+    public static String convertLayoutToString(JellyType[][] layout) {
         List<String> jellyRows = new ArrayList<>();
-        for(JellyType[] jellRow : layout){
+        for (JellyType[] jellRow : layout) {
             jellyRows.add(Joiner.on("").join(jellRow));
         }
         return Joiner.on("-").join(jellyRows);
     }
 
-    public static boolean valideRowRange(int pos){
-        return pos >=0 && pos< JELLY_ROW;
+    public static boolean valideRowRange(int pos) {
+        return pos >= 0 && pos < JELLY_ROW;
     }
 
-    public static boolean valideColumnRange(int pos){
-        return pos >=0 && pos< JELLY_COLUMN;
+    public static boolean valideColumnRange(int pos) {
+        return pos >= 0 && pos < JELLY_COLUMN;
     }
-    public static void main(String args[]){
+
+    public static void main(String args[]) {
         String layout = "BBBBBBBH-SBBBBBBB-VBBBBBBB-BBBBBBBB-BBBBBBBB-BBBBBBBB-BBBBBBBB-BBBBBBBB";
         JellyType[][] jellys = convertStringToLayout(layout);
         String layoutAfter = convertLayoutToString(jellys);

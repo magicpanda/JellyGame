@@ -1,6 +1,7 @@
 package com.magicpanda.game.jelly.handler;
 
 import com.magicpanda.game.jelly.model.JellyType;
+import com.magicpanda.game.jelly.model.Position;
 import com.magicpanda.game.jelly.model.Score;
 import com.magicpanda.game.jelly.util.GamePreConditions;
 import com.magicpanda.game.jelly.util.Utilities;
@@ -16,6 +17,7 @@ import static com.magicpanda.game.jelly.util.Utilities.*;
 
 /**
  * Created by 利彬 on 2015/3/29.
+ * Jelly Game Logic for jelly move and break, jelly random fill.
  */
 @Component
 public class GameHandler {
@@ -29,24 +31,24 @@ public class GameHandler {
         return fillJellyAfterMove(jellyLayouts);
     }
 
-    private void moveAndAction(JellyType[][] jellyLayouts, int row0, int col0, int row1, int col1) {
+    public Score moveAndAction(JellyType[][] jellyLayouts, int row0, int col0, int row1, int col1) {
         GamePreConditions.checkState(row0 <= row1 && col0 <= col1, MOVE_JELLY_INVALID, "INVALID PARAMS");
+        Score score = new Score();
         List<Position> effectPositions = new ArrayList<>();
-        for (int i = col0; i <= col1; i++) {
-            for (int j = row0; j <= row1; j++) {
-                effectPositions.add(new Position(i, j));
+        for (int col = col0; col <= col1; col++) {
+            for (int row = row0; row <= row1; row++) {
+                effectPositions.add(new Position(col, row));
             }
         }
-        Score score = new Score();
         clearJelly(jellyLayouts, effectPositions, score);
-        LOGGER.debug("Total erase count is :" + score.getCount());
+        return score;
     }
 
-    private void clearJelly(JellyType[][] jellys, List<Position> effectPositions, Score score) {
+    public void clearJelly(JellyType[][] jellys, List<Position> effectPositions, Score score) {
         if (effectPositions.size() == 0) return;
         List<Position> newEffectPositions = new ArrayList<>();
         for (Position p : effectPositions) {
-            if (!Utilities.valideColumnRange(p.x) || !Utilities.valideRowRange(p.y) ){
+            if (!Utilities.valideColumnRange(p.x) || !Utilities.valideRowRange(p.y)) {
                 continue;
             }
             JellyType jellyType = jellys[p.y][p.x];
@@ -87,17 +89,17 @@ public class GameHandler {
         clearJelly(jellys, newEffectPositions, score);
     }
 
-    private String fillJellyAfterMove(JellyType[][] jellyLayouts) {
-        for(int col = 0; col < Utilities.JELLY_COLUMN;col++){
+    public String fillJellyAfterMove(JellyType[][] jellyLayouts) {
+        for (int col = 0; col < Utilities.JELLY_COLUMN; col++) {
             List<JellyType> jellys = new ArrayList<>();
-            for(int row = Utilities.JELLY_ROW - 1;row >= 0; row--){
-                if(jellyLayouts[row][col] != JellyType.NULL){
-                  jellys.add(jellyLayouts[row][col]);
+            for (int row = Utilities.JELLY_ROW - 1; row >= 0; row--) {
+                if (jellyLayouts[row][col] != JellyType.NULL) {
+                    jellys.add(jellyLayouts[row][col]);
                 }
             }
             int count = 0;
-            for(int row = Utilities.JELLY_ROW - 1; row >= 0; row--){
-                if(count >= jellys.size()) {
+            for (int row = Utilities.JELLY_ROW - 1; row >= 0; row--) {
+                if (count >= jellys.size()) {
                     jellyLayouts[row][col] = JellyType.getRandomJellyType();
                 } else {
                     jellyLayouts[row][col] = jellys.get(count);
@@ -106,14 +108,5 @@ public class GameHandler {
             }
         }
         return convertLayoutToString(jellyLayouts);
-    }
-
-    public static void main(String args[]) {
-        String layout = "BBBBBBBH-BBBBVBBB-VBBBBHBB-BBBBBBBB-BBBBBBBB-BBBBBBBB-BBBBSBBB-BBBBBBBB";
-        GameHandler gameHandler = new GameHandler();
-        JellyType[][] jellyLayouts = Utilities.convertStringToLayout(layout);
-        gameHandler.moveAndAction(jellyLayouts, 0, 1, 3, 5);
-        String layoutAfter = Utilities.convertLayoutToString(jellyLayouts);
-        String fillJellyAfterMove = gameHandler.fillJellyAfterMove(jellyLayouts);
     }
 }

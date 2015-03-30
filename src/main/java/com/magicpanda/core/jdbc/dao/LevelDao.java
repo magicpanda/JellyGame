@@ -12,15 +12,15 @@ import java.util.List;
 @Component
 public class LevelDao extends JdbcDaoSupport {
 
-	public List<LevelLayout> getLevelLayoutList() {
-		String sql = "SELECT * FROM level_layout t";
-		return super.getJdbcTemplate().query(sql, new RowMapper() {
-			public LevelLayout mapRow(ResultSet rs, int num) throws SQLException {
+    public List<LevelLayout> getLevelLayoutList() {
+        String sql = "SELECT * FROM level_layout t";
+        return super.getJdbcTemplate().query(sql, new RowMapper() {
+            public LevelLayout mapRow(ResultSet rs, int num) throws SQLException {
                 LevelLayout levelLayout = new LevelLayout();
                 levelLayout.setLevel(rs.getInt("level"));
                 levelLayout.setLayout(rs.getString("layout"));
                 return levelLayout;
-			}
-		});
-	}
+            }
+        });
+    }
 }

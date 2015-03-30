@@ -1,4 +1,4 @@
-use jelly_game;
+USE jelly_game;
 INSERT INTO level_layout
 (`id`, `level`, `layout`)
 VALUES
@@ -23,8 +23,4 @@ INSERT INTO level_layout
 (`id`, `level`, `layout`)
 VALUES
   (5, 5, 'BBBBBBBB-BBBBBBBB-BBBBBBBB-BBBBBBBB-BBBBBBBB-BBBBBBBB-BBBBBBBB-BBBBBBBB');
-
-INSERT INTO user
-(sessionId, currentLevel, currentLayout)
-VALUES ('i7ui1tj2jbqsh1',1 , 'BBBBBBBB-BBBBBBBB-BBBBBBBB-BBBBBBBB-BBBBBBBB-BBBBBBBB-BBBBBBBB-BBBBBBBS')
 

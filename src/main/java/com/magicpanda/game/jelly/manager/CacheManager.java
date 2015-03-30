@@ -10,24 +10,29 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 
 /**
  * Created by 利彬 on 2015/3/28.
+ * Cache Data for frequently used data
  */
 @Component
 public class CacheManager {
+    private static final Logger LOGGER = LoggerFactory.getLogger(CacheManager.class);
     public static final int MAX_LEVEL_LAYOUT_SIZE = 1000;
     private int cacheExpire = 100;//In Second
     private LevelDao levelDao;
-    private static final Logger LOGGER = LoggerFactory.getLogger(CacheManager.class);
+    //Level Layout Cache which refresh in 100 second and max size is 1000
     private LoadingCache<Integer, Map<Integer, LevelLayout>> levelLayoutCache = CacheBuilder.newBuilder().expireAfterAccess(cacheExpire, TimeUnit.SECONDS).maximumSize(MAX_LEVEL_LAYOUT_SIZE).build(new LevelLayoutCacheLoader());
+
     @Autowired
-    public CacheManager(LevelDao levelDao){
+    public CacheManager(LevelDao levelDao) {
         this.levelDao = levelDao;
     }
+
     public Map<Integer, LevelLayout> getLevelLayoutCache(Integer key) {
         Map<Integer, LevelLayout> result = new HashMap<>();
         try {
@@ -43,7 +48,7 @@ public class CacheManager {
         @Override
         public Map<Integer, LevelLayout> load(Integer key) throws Exception {
             Map<Integer, LevelLayout> result = new HashMap<>();
-            for(LevelLayout levelLayout : levelDao.getLevelLayoutList()){
+            for (LevelLayout levelLayout : levelDao.getLevelLayoutList()) {
                 result.put(levelLayout.getLevel(), levelLayout);
             }
             return result;

@@ -2,6 +2,7 @@ package com.magicpanda.game.jelly.model;
 
 /**
  * Created by 利彬 on 2015/3/28.
+ * Jelly Init Layout in a level.
  */
 
 public class LevelLayout {

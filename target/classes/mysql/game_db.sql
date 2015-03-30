@@ -1,7 +1,7 @@
 -- drop databases
-drop database if exists core;
-drop database if exists jelly_game;
+DROP DATABASE IF EXISTS core;
+DROP DATABASE IF EXISTS jelly_game;
 
 -- create databases
-create database core;
-create database jelly_game;
+CREATE DATABASE core;
+CREATE DATABASE jelly_game;
