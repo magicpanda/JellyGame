@@ -2,67 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0a1d96a-5169-44b4-9904-5d508f65cf7d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/magicpanda/game/jelly/dao/LevelDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_6_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_6_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_log4j_over_slf4j_1_6_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_log4j_over_slf4j_1_7_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_log4j_over_slf4j_slf4j_version.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/magicpanda/game/jelly/dao/UserDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/sql/game_db.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/sql/game_shema.sql" />
-      <change type="DELETED" beforePath="D:\DEV\Github\JellyGameMagic\src\main\java\com\magicpanda\core\jdbc\dao\LevelDao.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\DEV\Github\JellyGameMagic\src\main\java\com\magicpanda\core\jdbc\dao\UserDao.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\DEV\Github\JellyGameMagic\src\test\resources\jdbc.properties" afterPath="" />
-      <change type="DELETED" beforePath="D:\DEV\Github\JellyGameMagic\target\classes\com\magicpanda\core\jdbc\dao\LevelDao$1.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\DEV\Github\JellyGameMagic\target\classes\com\magicpanda\core\jdbc\dao\LevelDao.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\DEV\Github\JellyGameMagic\target\classes\com\magicpanda\core\jdbc\dao\UserDao$1.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\DEV\Github\JellyGameMagic\target\classes\com\magicpanda\core\jdbc\dao\UserDao.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\DEV\Github\JellyGameMagic\target\jellygame\WEB-INF\classes\com\magicpanda\core\jdbc\dao\LevelDao$1.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\DEV\Github\JellyGameMagic\target\jellygame\WEB-INF\classes\com\magicpanda\core\jdbc\dao\LevelDao.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\DEV\Github\JellyGameMagic\target\jellygame\WEB-INF\classes\com\magicpanda\core\jdbc\dao\UserDao$1.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\DEV\Github\JellyGameMagic\target\jellygame\WEB-INF\classes\com\magicpanda\core\jdbc\dao\UserDao.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\DEV\Github\JellyGameMagic\target\jellygame\WEB-INF\lib\jcl-over-slf4j-1.7.8.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\DEV\Github\JellyGameMagic\target\jellygame\WEB-INF\lib\slf4j-api-1.7.8.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\DEV\Github\JellyGameMagic\target\test-classes\jdbc.properties" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/magicpanda/game/jelly/manager/CacheManager$LevelLayoutCacheLoader.class" afterPath="$PROJECT_DIR$/target/classes/com/magicpanda/game/jelly/manager/CacheManager$LevelLayoutCacheLoader.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jellygame/WEB-INF/classes/com/magicpanda/game/jelly/manager/CacheManager$LevelLayoutCacheLoader.class" afterPath="$PROJECT_DIR$/target/jellygame/WEB-INF/classes/com/magicpanda/game/jelly/manager/CacheManager$LevelLayoutCacheLoader.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/magicpanda/game/jelly/manager/CacheManager.class" afterPath="$PROJECT_DIR$/target/classes/com/magicpanda/game/jelly/manager/CacheManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jellygame/WEB-INF/classes/com/magicpanda/game/jelly/manager/CacheManager.class" afterPath="$PROJECT_DIR$/target/jellygame/WEB-INF/classes/com/magicpanda/game/jelly/manager/CacheManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/magicpanda/game/jelly/handler/GameHandler$1.class" afterPath="$PROJECT_DIR$/target/classes/com/magicpanda/game/jelly/handler/GameHandler$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jellygame/WEB-INF/classes/com/magicpanda/game/jelly/handler/GameHandler$1.class" afterPath="$PROJECT_DIR$/target/jellygame/WEB-INF/classes/com/magicpanda/game/jelly/handler/GameHandler$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/magicpanda/game/jelly/handler/GameHandler.class" afterPath="$PROJECT_DIR$/target/classes/com/magicpanda/game/jelly/handler/GameHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jellygame/WEB-INF/classes/com/magicpanda/game/jelly/handler/GameHandler.class" afterPath="$PROJECT_DIR$/target/jellygame/WEB-INF/classes/com/magicpanda/game/jelly/handler/GameHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/magicpanda/core/controller/RpcController.class" afterPath="$PROJECT_DIR$/target/classes/com/magicpanda/core/controller/RpcController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jellygame/WEB-INF/classes/com/magicpanda/core/controller/RpcController.class" afterPath="$PROJECT_DIR$/target/jellygame/WEB-INF/classes/com/magicpanda/core/controller/RpcController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jellygame.war" afterPath="$PROJECT_DIR$/target/jellygame.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/magicpanda/game/jelly/manager/CacheManager.java" afterPath="$PROJECT_DIR$/src/main/java/com/magicpanda/game/jelly/manager/CacheManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/magicpanda/game/jelly/handler/GameHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/magicpanda/game/jelly/handler/GameHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JellyGame.iml" afterPath="$PROJECT_DIR$/JellyGame.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/JellyGame_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/JellyGame_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/magicpanda/core/controller/RpcController.java" afterPath="$PROJECT_DIR$/src/main/java/com/magicpanda/core/controller/RpcController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" afterPath="$PROJECT_DIR$/target/classes/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jellygame/WEB-INF/classes/applicationContext.xml" afterPath="$PROJECT_DIR$/target/jellygame/WEB-INF/classes/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jellygame/index.jsp" afterPath="$PROJECT_DIR$/target/jellygame/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/logback.xml" afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/logback.xml" afterPath="$PROJECT_DIR$/src/test/resources/logback.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/logback.xml" afterPath="$PROJECT_DIR$/target/classes/logback.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jellygame/WEB-INF/classes/logback.xml" afterPath="$PROJECT_DIR$/target/jellygame/WEB-INF/classes/logback.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/logback.xml" afterPath="$PROJECT_DIR$/target/test-classes/logback.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/sql/test-data.sql" afterPath="$PROJECT_DIR$/src/test/resources/sql/test-data.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/sql/test-data.sql" afterPath="$PROJECT_DIR$/target/test-classes/sql/test-data.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="JellyGame.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -121,6 +61,19 @@
               <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.09326425" vertical-offset="0" max-vertical-offset="3996">
+              <caret line="1" column="39" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
           </provider>
         </entry>
       </file>
@@ -196,16 +149,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JellyType.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/magicpanda/game/jelly/model/JellyType.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="1620">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
           <provider selected="true" editor-type-id="text-editor">
@@ -228,10 +171,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserDao.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/magicpanda/game/jelly/dao/UserDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5510204" vertical-offset="0" max-vertical-offset="1944">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1944">
               <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
               <folding>
                 <element signature="e#1753#1993#0" expanded="true" />
@@ -348,7 +291,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/mysql/data/level_layout.sql" />
         <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/resources/logback.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/magicpanda/core/controller/RpcController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
@@ -360,6 +302,7 @@
         <option value="$PROJECT_DIR$/src/test/resources/sql/game_shema.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/magicpanda/game/jelly/dao/LevelDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/magicpanda/game/jelly/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -595,114 +538,6 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JellyGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JellyGameMagic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JellyGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JellyGameMagic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JellyGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JellyGameMagic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mysql" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JellyGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JellyGameMagic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mysql" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -727,74 +562,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="magicpanda" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jelly" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JellyGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JellyGameMagic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="magicpanda" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jelly" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JellyGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JellyGameMagic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="magicpanda" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1416,16 +1183,16 @@
       <updated>1427440322252</updated>
       <workItem from="1427440323652" duration="53219000" />
       <workItem from="1427680985931" duration="10244000" />
-      <workItem from="1427698894761" duration="3321000" />
+      <workItem from="1427698894761" duration="3884000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66784000" />
+    <option name="totallyTimeSpent" value="67347000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952815" sideWeight="0.6712565" order="9" side_tool="false" content_ui="tabs" />
@@ -1445,7 +1212,7 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32949308" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25840092" sideWeight="0.5" order="18" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24827586" sideWeight="0.77086496" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20172414" sideWeight="0.77086496" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35172415" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32949308" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29590288" sideWeight="0.45783132" order="1" side_tool="false" content_ui="combo" x="518" y="152" width="330" height="424" />
@@ -1835,17 +1602,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.860835" vertical-offset="2485" max-vertical-offset="3708">
-          <caret line="57" column="28" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1502" max-vertical-offset="7056">
@@ -1983,7 +1739,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/magicpanda/game/jelly/dao/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5510204" vertical-offset="0" max-vertical-offset="1944">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1944">
           <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
           <folding>
             <element signature="e#1753#1993#0" expanded="true" />
@@ -1993,6 +1749,17 @@
             <marker date="1427702152888" expanded="true" signature="2124:2198" placeholder="INSERT INTO ..." />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09326425" vertical-offset="0" max-vertical-offset="3996">
+          <caret line="1" column="39" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
   </component>
