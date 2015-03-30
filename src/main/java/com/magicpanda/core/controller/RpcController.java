@@ -1,6 +1,6 @@
 package com.magicpanda.core.controller;
 
-import com.magicpanda.core.jdbc.dao.UserDao;
+import com.magicpanda.game.jelly.dao.UserDao;
 import com.magicpanda.game.jelly.domain.User;
 import com.magicpanda.game.jelly.handler.GameHandler;
 import com.magicpanda.game.jelly.manager.CacheManager;

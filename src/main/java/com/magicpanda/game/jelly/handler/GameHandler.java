@@ -23,6 +23,9 @@ import static com.magicpanda.game.jelly.util.Utilities.*;
 public class GameHandler {
     private static final Logger LOGGER = LoggerFactory.getLogger(GameHandler.class);
 
+    /**
+     * @return the layout after 2 jelly move
+     */
     public String moveLayout(String layout, int row0, int col0, int row1, int col1) {
         GamePreConditions.checkState(valideRowRange(row0) && valideRowRange(row1) && valideColumnRange(col0) && valideColumnRange(col1),
                 MOVE_JELLY_INVALID, "INVALID PARAMS");
@@ -31,6 +34,10 @@ public class GameHandler {
         return fillJellyAfterMove(jellyLayouts);
     }
 
+    /**
+     * move and clear the Jelly which effect
+     * @return the total cleared Jelly Count and Score etc.
+     */
     public Score moveAndAction(JellyType[][] jellyLayouts, int row0, int col0, int row1, int col1) {
         GamePreConditions.checkState(row0 <= row1 && col0 <= col1, MOVE_JELLY_INVALID, "INVALID PARAMS");
         Score score = new Score();
@@ -44,6 +51,9 @@ public class GameHandler {
         return score;
     }
 
+    /**
+     * clear the Jelly which effect recursively
+     */
     public void clearJelly(JellyType[][] jellys, List<Position> effectPositions, Score score) {
         if (effectPositions.size() == 0) return;
         List<Position> newEffectPositions = new ArrayList<>();
@@ -89,6 +99,9 @@ public class GameHandler {
         clearJelly(jellys, newEffectPositions, score);
     }
 
+    /**
+     * Falling free the Jelly above and fill the random Jelly To the empty position
+     */
     public String fillJellyAfterMove(JellyType[][] jellyLayouts) {
         for (int col = 0; col < Utilities.JELLY_COLUMN; col++) {
             List<JellyType> jellys = new ArrayList<>();

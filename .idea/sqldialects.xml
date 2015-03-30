@@ -4,5 +4,7 @@
     <file url="file://$PROJECT_DIR$/src/main/resources/mysql/data/level_layout.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/src/main/resources/mysql/game_db.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/src/main/resources/mysql/game_shema.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/test/resources/sql/game_db.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/test/resources/sql/test-data.sql" dialect="MySQL" />
   </component>
 </project>

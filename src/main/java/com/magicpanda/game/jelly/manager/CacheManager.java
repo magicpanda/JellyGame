@@ -3,7 +3,7 @@ package com.magicpanda.game.jelly.manager;
 import com.google.common.cache.CacheBuilder;
 import com.google.common.cache.CacheLoader;
 import com.google.common.cache.LoadingCache;
-import com.magicpanda.core.jdbc.dao.LevelDao;
+import com.magicpanda.game.jelly.dao.LevelDao;
 import com.magicpanda.game.jelly.model.LevelLayout;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

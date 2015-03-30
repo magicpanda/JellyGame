@@ -29,11 +29,11 @@
     <!--<jdbc:initialize-database data-source="dataSource" ignore-failures="ALL">-->
     <!--<jdbc:script location="classpath:${db.type}/game_shema.sql"/>-->
     <!--</jdbc:initialize-database>-->
-    <bean id="userDao" class="com.magicpanda.core.jdbc.dao.UserDao">
+    <bean id="userDao" class="com.magicpanda.game.jelly.dao.UserDao">
         <property name="dataSource" ref="dataSource"></property>
     </bean>
 
-    <bean id="levelDao" class="com.magicpanda.core.jdbc.dao.LevelDao">
+    <bean id="levelDao" class="com.magicpanda.game.jelly.dao.LevelDao">
         <property name="dataSource" ref="dataSource"></property>
     </bean>
 </beans>
