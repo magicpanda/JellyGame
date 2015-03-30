@@ -97,8 +97,9 @@ In the following experiments, the spec of the computer used can be found in the 
 We use [Apache Jmeter](http://jmeter.apache.org) for load testing, and the load testing script can be found in `${JellyGame}/jmeter.jmx`.
 
 
-|sampler_label	|aggregate_report_count	|average	|aggregate_report_min	|aggregate_report_max	|aggregate_report_stddev	|aggregate_report_error%	|aggregate_report_rate	|aggregate_report_bandwidth	|average_bytes
-|startLevel	|50000	|232	|28	|22227	|719.2044911	|0	|200.837089	|46.57485054	|237.46932
-|总体	|50000	|232	|28	|22227	|719.2044911	|0	|200.837089	|46.57485054	|237.46932
+|sampler_label	|aggregate_report_count	|average	|aggregate_report_min	|aggregate_report_max	|aggregate_report_stddev	|aggregate_report_error%	|aggregate_report_rate	|aggregate_report_bandwidth	|average_bytes|
+|-----|------|-----|-----|-------|------|--------|--------|-------|
+|startLevel	|50000	|232	|28	|22227	|719.2044911	|0	|200.837089	|46.57485054	|237.46932|
+|总体	|50000	|232	|28	|22227	|719.2044911	|0	|200.837089	|46.57485054	|237.46932|
 
 
